@@ -1,1 +1,112 @@
-<html><body><h1>Welcome to Nick Abouhalkah Website</h1></body></html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nick Abouhalkah Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #232526, #414345);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 0 20px 20px 20px;
+      color: #ddd;
+      max-width: 800px;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      text-decoration: none;
+      padding: 12px 24px;
+      background-color: #00c9ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .links a:hover {
+      background-color: #5ee6ff;
+      transform: scale(1.05);
+    }
+
+    .approval-form {
+      background-color: #2a2d32;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 40px;
+      color: white;
+    }
+
+    .approval-form input[type="radio"] {
+      margin: 0 10px;
+    }
+
+    .approval-form button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00c9ff;
+      color: black;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .approval-form button:hover {
+      background-color: #5ee6ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my website!</h1>
+  <p>
+    This page links to my public portfolio. I also respectfully request approval to use a private full-stack web platform as a valid submission for applicable coursework. The system is fully developed and maintained by me as a solo developer and is currently in the construction phase. It is a work in progress that integrates HTML, CSS, JavaScript, PHP, and SQL to power modular components, user interfaces, and secure back-end functionality.
+  </p>
+
+  <div class="links">
+    <a href="https://abouhalkah.info" target="_blank">Abouhalkah.info</a>
+    <a href="https://github.com/aboukid94" target="_blank">GitHub Profile</a>
+  </div>
+
+  <div class="approval-form">
+    <h3>Instructor Approval Form</h3>
+    <form action="https://formsubmit.co/nabouhalkah@ivytech.edu" method="POST">
+      <p>Do you approve the use of my private full-stack platform as valid coursework?</p>
+      <label><input type="radio" name="approval" value="Yes" required> Yes</label>
+      <label><input type="radio" name="approval" value="No" required> No</label><br><br>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Instructor Approval Response from GitHub Page">
+      <input type="hidden" name="_next" value="https://aboukid94.github.io/Abou_Nick/thank-you.html">
+
+      <button type="submit">Submit Response</button>
+    </form>
+  </div>
+</body>
+</html>
